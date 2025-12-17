@@ -9,3 +9,7 @@ resource "aws_instance" "terra-instance" {
     Name = "Terraform_demo"
   }
 }
+resource "aws_s3_bucket" "terra-bucket" {
+    bucket = "my-terraform-buck"
+  
+}
