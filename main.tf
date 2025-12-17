@@ -2,8 +2,8 @@ provider "aws" {
     region = "ap-south-1"
 }
 resource "aws_instance" "terra-instance" {
-  ami = "ami-0abcdef1234567890"
-  instance_type = "t2.micro"
+  ami = "ami-00ca570c1b6d79f36"
+  instance_type = "t3.micro"
 
   tags = {
     Name = "Terraform_demo"
