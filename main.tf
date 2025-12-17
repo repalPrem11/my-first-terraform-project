@@ -2,7 +2,7 @@ provider "aws" {
     region = "ap-south-1"
 }
 resource "aws_instance" "terra-instance" {
-  ami = "ami-0d00237da09c0e5b8"
+  ami = "ami-0abcdef1234567890"
   instance_type = "t2.micro"
 
   tags = {
@@ -10,6 +10,6 @@ resource "aws_instance" "terra-instance" {
   }
 }
 resource "aws_s3_bucket" "terra-bucket" {
-    bucket = "my-terraform-buck"
+    bucket = "my-terraform-buck-devopsprem"
   
 }
